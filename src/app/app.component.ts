@@ -10,6 +10,4 @@ import { Component } from '@angular/core';
     <app-dashboard></app-dashboard>
   `
 })
-export class AppComponent {
-  title = "Carl's Web Site";
-}
+export class AppComponent { }
