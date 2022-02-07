@@ -43,7 +43,9 @@ import { Component } from '@angular/core';
   `
 })
 export class LoginComponent {
-  onSubmit(login: { email: string, password: string }): void {
-    console.log(login);
+  constructor() { }
+
+  onSubmit(credentials: { email: string, password: string }): void {
+
   }
 }
