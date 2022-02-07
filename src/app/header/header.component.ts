@@ -33,8 +33,13 @@ import { Component } from '@angular/core';
         margin-left: auto;
 
         a {
+          cursor: pointer;
           font-size: 0.85rem;
           margin-left: 0.5rem;
+
+          &:hover {
+            text-decoration: underline;
+          }
         }
       }
     }
