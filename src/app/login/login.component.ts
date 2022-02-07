@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 
+import { UserService } from '../services/user.service';
+
 @Component({
   selector: 'app-login',
   styleUrls: ['./login.component.scss'],
@@ -43,9 +45,9 @@ import { Component } from '@angular/core';
   `
 })
 export class LoginComponent {
-  constructor() { }
+  constructor(private _userService: UserService) { }
 
   onSubmit(credentials: { email: string, password: string }): void {
-
+    this._userService.login(credentials);
   }
 }
