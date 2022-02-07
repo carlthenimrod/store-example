@@ -3,7 +3,8 @@ import { Users } from '../interfaces/user';
 export const users: Users = [
   {
     name: { first: 'Carl', last: 'Dawson'},
-    email: 'carl.dawson@example.com', password: '123'
+    email: 'carl.dawson@example.com',
+    password: '123'
   },
   {
     name: { first: 'John', last: 'Doe'},
