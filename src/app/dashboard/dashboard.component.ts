@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+
+import { User } from '../interfaces/user';
 
 @Component({
   selector: 'app-dashboard',
@@ -17,9 +19,11 @@ import { Component } from '@angular/core';
     }
   `],
   template: `
-    <h1>Welcome FIRST NAME!</h1>
+    <h1>Welcome {{ user.name.first }}!</h1>
 
     <p>Dashboard coming soon... (2025)</p>
   `
 })
-export class DashboardComponent { }
+export class DashboardComponent {
+  @Input() user!: User;
+}
