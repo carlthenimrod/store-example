@@ -1,7 +1,10 @@
 export interface User {
-  id: number;
   email: string;
   password: string;
+  name: {
+    first: string;
+    last: string;
+  };
 }
 
 export type Users = User[];
