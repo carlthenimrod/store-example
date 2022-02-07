@@ -25,12 +25,7 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit(): void {
     this._userService.user$
-      .subscribe(user => {
-        this.user = user;
-        if (!this.user) { return; }
-        this.user.name.first = 'Test';
-
-      });
+      .subscribe(user => this.user = user);
   }
 
   onLogout(): void {
